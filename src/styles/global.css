@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {}
+
+h1 {
+    @apply text-5xl max-w-prose;
+}
+
+a,
+p,
+li {
+    @apply text-lg;
+}
