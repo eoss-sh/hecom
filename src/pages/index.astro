@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Tag from '../components/Tag.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -7,13 +8,13 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
     <div class="h-96 flex flex-col items-start justify-center gap-16">
-        <h1>A tiny but independent Swiss Digital Product Studio.</h1>
+        <h1 class="max-w-prose">A tiny but independent Swiss Digital Product Studio.</h1>
         <div>
             <p class="mb-4">Our Products in use or under active development:</p>
-            <ul class="list-disc ml-4">
-                <li><a class="underline" href="https://www.memba.ch">memba - Mitgliederverwaltung für Schweizer Verbände und Organisationen</a></li>
-                <li>evento - Eventmanagement für jedermann</li>
-                <li>UX - Reasearch LM - AI driven Tool to support UX Researcher.</li>
+            <ul>
+                <li class="flex flex-row gap-4 items-center"><a class="underline" href="https://www.memba.ch">memba - Mitgliederverwaltung für Schweizer Verbände und Organisationen</a><Tag tagName="Beta" /></>
+                <li>evento - Eventmanagement für jedermann <Tag tagName="under Development" /></li>
+                <li>UX - Reasearch LM - AI driven Tool to support UX Researcher.<Tag tagName="Planning" /></li>
             </ul>
         </div>
     </div>
